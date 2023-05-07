@@ -1,26 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-const Person = () => <h2>John Doe</h2>;
-const Message = () => {
-  return <p>This is my message</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
 };
 
-// function Greeting() {
-//   return React.createElement("h2", {}, "Hello Ola");
-// }
+const Image = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/71+vQyk44IL._AC_UL600_SR600,400_.jpg"
+    alt="Happy Place"
+  />
+);
+const Title = () => {
+  return <h2>Happy Place</h2>;
+};
+const Author = () => <h4>Emily Henry </h4>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<Greeting />);
+root.render(<BookList />);
 
 // export default Greeting;

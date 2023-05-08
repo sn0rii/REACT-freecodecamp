@@ -1,14 +1,24 @@
+import img1 from "./img/book-1.jpg";
+import img2 from "./img/book-2.jpg";
+import img3 from "./img/book-3.jpg";
 export const books = [
   {
     author: "Emily Henry",
     title: "Happy Place",
-    img: "https://images-na.ssl-images-amazon.com/images/I/71+vQyk44IL._AC_UL600_SR600,400_.jpg",
+    img: img1,
     id: 1,
   },
   {
     author: "James Clear",
     title: "Atomic Habits",
-    img: "https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L._AC_UL600_SR600,400_.jpg",
+    img: img2,
     id: 2,
+  },
+
+  {
+    author: "Piggyback",
+    title: "The Legend of Zelda",
+    img: img3,
+    id: 3,
   },
 ];

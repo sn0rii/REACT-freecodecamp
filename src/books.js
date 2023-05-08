@@ -7,12 +7,14 @@ export const books = [
     title: "Happy Place",
     img: img1,
     id: 1,
+    // number: 1,
   },
   {
     author: "James Clear",
     title: "Atomic Habits",
     img: img2,
     id: 2,
+    // number: 2,
   },
 
   {
@@ -20,5 +22,6 @@ export const books = [
     title: "The Legend of Zelda",
     img: img3,
     id: 3,
+    // number: 3,
   },
 ];
